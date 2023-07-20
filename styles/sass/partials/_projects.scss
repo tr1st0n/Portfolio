@@ -1,0 +1,36 @@
+#projectwrap {
+    padding: 60px 0 0 0;
+}
+
+.project-section {
+    text-align: center;
+    font-size: 40px;
+    margin: 0 0 30px 0;
+}
+.projects {
+    padding: 0 20px 40px 20px;
+    display: flex;
+
+.project, 
+.project2 {
+    padding: 10px;
+    box-shadow: 5px 10px #888;
+    border: 1px solid black;
+    margin: 0 10px;
+    background-color: rgb(240, 239, 239);
+    h3 {
+        font-size: 30px;
+        }  
+    p {
+        font-size: 24px;
+        
+    }
+       
+    .code-options {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+   
+}
+

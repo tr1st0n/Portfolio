@@ -1,0 +1,25 @@
+.skills {
+    background: linear-gradient(-45deg, #4eefd7, #3c9ae7, #2370d5, #23E5AB);
+        background-size: 400% 400%;
+        position: relative;
+        animation: change 10s ease-in-out infinite;;
+        padding: 50px 30px;
+    
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+    ul {
+        display: flex;        
+        justify-content: center;
+        li {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 30px;
+            
+        }
+        
+    }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triston Moulton</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="mobile-nav">
+            <div class="dropdown">
+                <a href="#about" class="drop-nav">
+                    <div class="one">About</div>
+                </a>
+                <a href="skills" class="drop-nav">
+                    <div class="two">Skills</div>
+                </a>
+                <a href="#projects" class="drop-nav">
+                    <div class="three">Projects</div>
+                </a>
+                <a href="#contact" class="drop-nav">
+                    <div class="four">Contact</div>
+                </a>
+            </div>
+        </div>
+        <!--Navigation Bar-->
+        <div class="navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!--Header Section-->
+        <div class="landing">
+            
+            <h1 class="name">Triston Moulton</h1>
+            <img src="./assets/AvatarMaker.png" alt="profile image" style="align-self: center;">
+            <p>Toronto Based UX/UI Developer that lives to learn!</p>
+            <div class="daynight" style="display: flex; justify-content: center;">
+                <button id="toggle">🌘</button>
+                <button id="toggle2">🌖</button>
+            </div>  
+        </div>
+    </header> 
+        <!--About Me Section-->
+        <div id="about" class="about">
+            <div class="wrapper">
+                <div class="about-container"> 
+                    <div class="about-text"> 
+                        <h2 class="about-title">About Me</h2>       
+                            <p> Hello there! I'm Triston, a passionate web developer with a love for crafting user-friendly and visually appealing websites. With a strong foundation in HTML, CSS, JavaScript, and React, I bring both creativity and technical expertise to the table. </p>
+                            <p> My journey as a web developer began with creating my first Tumblr page. Since then, I have been on a thrilling ride of continuous learning and growth, always seeking out new challenges and opportunities to expand my skill set. </p>
+                            <p> I believe that the key to successful web development lies in understanding the needs of users. My goal is to create seamless and intuitive experiences that leave a positive impact on visitors. Whether it's building a responsive website, optimizing performance, or diving into the realm of accessibility, I'm always up for the task. </p>
+                            
+                            <span id="more4">
+                            <p>I thrive in collaborative environments, valuing effective communication and teamwork. Working closely with designers, UX experts, and fellow developers allows me to bring projects to life with precision and efficiency.</p>
+                            <p> In addition to my technical prowess, I am a firm believer in lifelong learning. I stay abreast of the latest trends, tools, and best practices in web development, ensuring that my work stays ahead of the curve.</p>
+                            <p>Let's create something remarkable together!</p>
+                            </span>
+                            <button onclick="myFunction4()" id="myBtn4">Read more</button>
+                    </div>
+                    <div class="about-portrait">
+                        <img src="./assets/me.jpg" alt="Portrait">
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!--Skills Section-->
+        <div id="skills" class="skills">
+            <h2 class="skills-title">Skills</h2>
+            <ul>
+                <li><img src="./assets/html5.png" alt="HTML" id="five"></li>
+                <li><img src="./assets/javascript.png" alt="Javascript"></li>
+                <li><img src="./assets/css.png" alt="CSS"></li>
+          
+                <li><img src="./assets/react.png" alt="React"></li>
+                <li><img src="./assets/firebase.png" alt="Firebase"></li>
+            </ul>
+        </div>
+        <!--Project Section-->
+        <div id="projectwrap">
+            <div id="projects" class="wrapper">
+                <h2 class="project-section">Projects</h2>
+                <div class="projects">
+                    
+                    <div class="project">
+                        <div class="responsive-flex">                            
+                                <h3>Television Guide</h3>
+                                <img src="./assets/project1.png" alt="">
+                        </div>
+
+                        <div class="responsive-text">
+                            <p>React & JSX</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                            <div class="code-options">  
+                                <button onclick="myFunction()" id="myBtn">Read more</button> 
+                                <button>View Site</button>
+                                <button>View Code</button> 
+                            </div>  
+                        </div>                                 
+                    </div>
+                    <div class="project2">
+                        <div class="responsive-flex">                            
+                                <h3>Code 5 News</h3>
+                                <img src="./assets/code5.png" alt="">
+                        </div>
+
+                        <div class="responsive-text">
+                            <p>React & JSX</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>                        
+                            <div class="code-options"> 
+                                <button onclick="myFunction2()" id="myBtn2">Read more</button> 
+                                <a href="https://project4-teammajesty-luxuryspacetours.netlify.app/">View Site</a>  
+                                <a href="https://github.com/JC47-TeamMajesty/majesty-space-tours">View Code</a>
+                            </div>  
+                        </div>                                 
+                    </div>
+                    <div class="project">
+                        <div class="responsive-flex">                            
+                                <h3>YBS Space Tours</h3>
+                                <img src="./assets/YBS.png" alt="">
+                        </div>
+
+                        <div class="responsive-text">
+                            <p>React & JSX</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more3">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                            <div class="code-options">  
+                                <button onclick="myFunction3()" id="myBtn3">Read more</button> 
+                                <a href="https://project4-teammajesty-luxuryspacetours.netlify.app/">View Site</a>  
+                                <a href="https://github.com/JC47-TeamMajesty/majesty-space-tours">View Code</a>
+                            </div>  
+                        </div>                                 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Contact Me Section-->
+        <div id="contact" class="contact-container">
+            <div class="personal">
+                <h2 class="personal-title">Let's Connect</h2>
+                <p>Ready to collaborate on an exciting project or discuss web development opportunities? I'd love to hear from you! Please feel free to reach out via email at <b>tristonxcodes@outlook.com</b>. You can also connect with me on LinkedIn for a more professional chat. Looking forward to connecting and exploring how we can create something exceptional together!</p>
+                <div class="platforms">
+                    <a href="https://twitter.com/codetrist0n"><img src="./assets/twitter.png" alt="twitter"></a>
+                    <a href="https://github.com/tr1st0n"><img src="./assets/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/triston-moulton-45a9a2aa/"><img src="./assets/linkedin.png" alt="linkedin" style="width: 80%; margin-top: 5px; margin-left: 5px;"></a>
+                </div>   
+                    
+            </div>
+            <div class="contact">
+                <h2 class="contact-title">Contact Me</h2>
+                <div class="thankyou"></div>
+                <form action="https://formsubmit.co/96bd8427042cd059a0fdcd1239dee1bb" method="POST">
+                    <div class="info">
+                        <input name="Name" type="text" placeholder="Name" required>
+                        <input name="Email" type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea name="message" required placeholder="Message"></textarea>
+                        <button class="submission">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <!--Footer-->
+        <div>
+            <footer>
+                <p id="foot-text">Created by Triston Moulton, 2023 ©</p>
+            </footer>
+        </div>
+
+<script src="script.js"></script>
+</body>
+</html>
