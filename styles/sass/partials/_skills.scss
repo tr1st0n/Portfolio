@@ -13,12 +13,12 @@
     ul {
         display: flex;        
         justify-content: center;
+        align-items: center;
         li {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            margin: 0 30px;
-            
+            width: 10%;
+            margin: 0 30px;    
         }
         
     }

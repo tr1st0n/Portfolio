@@ -121,6 +121,7 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 20px;
 }
 .contact-container .contact form .info input {
   width: 48%;
@@ -339,6 +340,11 @@
 .projects .project2 p {
   font-size: 24px;
 }
+.projects .project button,
+.projects .project2 button {
+  width: 100%;
+  margin-bottom: 10px;
+}
 .projects .project .code-options,
 .projects .project2 .code-options {
   display: -webkit-box;
@@ -347,6 +353,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.projects .project .code-options a,
+.projects .project2 .code-options a {
+  border: black;
 }
 
 .skills {
@@ -369,6 +379,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .skills ul li {
   display: -webkit-box;
@@ -377,8 +390,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 10%;
   margin: 0 30px;
 }
 
@@ -566,7 +578,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   margin: 0 auto;
   font-family: "Instrument Serif", serif;
-  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -657,6 +668,8 @@ footer p:hover {
   }
   #skills {
     padding: 50px 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #skills h2 {
     margin: 0;
@@ -678,6 +691,10 @@ footer p:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 30px;
   }
   .projects .project .responsive-flex,
@@ -692,24 +709,18 @@ footer p:hover {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .projects .project .responsive-flex img,
   .projects .project2 .responsive-flex img {
     width: 80%;
     height: 100%;
   }
-  .projects .project2 .responsive-flex {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
+  .projects .project .responsive-text,
   .projects .project2 .responsive-text {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    text-align: center;
   }
   .contact-container {
     display: -webkit-box;
