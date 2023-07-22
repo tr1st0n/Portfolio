@@ -628,6 +628,36 @@ p, a, ::placeholder, button {
   display: none;
 }
 
+p, a, h1, h2, h3, h4, img {
+  -webkit-animation: fade-up 0.5s;
+          animation: fade-up 0.5s;
+}
+
+@-webkit-keyframes fade-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px) scale(0.9);
+            transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px) scale(0.9);
+            transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
+  }
+}
 footer {
   background-color: white;
   text-align: center;
