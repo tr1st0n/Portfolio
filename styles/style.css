@@ -102,6 +102,12 @@
   text-align: center;
   font-size: 40px;
   color: white;
+  margin-bottom: 0;
+}
+.contact-container .contact p {
+  text-align: center;
+  color: white;
+  margin: 0 0 70px 0;
 }
 .contact-container .contact form {
   display: -webkit-box;
@@ -372,6 +378,12 @@
   text-align: center;
   font-size: 40px;
 }
+.skills p {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
 .skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,7 +632,7 @@ h1, h2, h3, h4 {
   font-family: "Montserrat", sans-serif;
 }
 
-p, a, ::placeholder, button {
+p, a, ::placeholder, button, label {
   font-family: "Montserrat", sans-serif;
 }
 
