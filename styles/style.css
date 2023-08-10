@@ -208,6 +208,89 @@
   display: none;
 }
 
+.hamburger {
+  display: none;
+  position: fixed;
+  right: -500px;
+  width: 350px;
+  height: 100%;
+  background-color: black;
+  opacity: 75%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.hamburger ul li a {
+  color: white;
+  text-align: right;
+  text-transform: uppercase;
+  list-style-type: none;
+  list-style: none;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #252525;
+}
+.hamburger .ham {
+  display: block;
+  top: 4%;
+  left: 110%;
+  position: fixed;
+  width: 31px;
+  height: 86px;
+  -webkit-transform: translateX(-650%);
+          transform: translateX(-650%);
+  border: 0;
+  background: 0 0;
+}
+.hamburger .ham .bar {
+  position: fixed;
+  background: white;
+  height: 4px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.hamburger .ham #bar1 {
+  top: 3px;
+  border: 1px solid black;
+}
+.hamburger .ham #bar2 {
+  top: 11px;
+  border: 1px solid black;
+}
+.hamburger .ham #bar3 {
+  top: 19px;
+  border: 1px solid black;
+}
+.hamburger .hamburger-nav {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 250px;
+}
+
+.hamburger.active {
+  right: 0;
+  z-index: 1;
+}
+
+.ham.open #bar1 {
+  background-color: white;
+  -webkit-transform: rotate(45deg) translate(6px, 5px);
+          transform: rotate(45deg) translate(6px, 5px);
+  border: none;
+}
+
+.ham.open #bar2 {
+  background-color: transparent;
+  border: none;
+}
+
+.ham.open #bar3 {
+  background-color: white;
+  -webkit-transform: rotate(-45deg) translate(6px, -5px);
+          transform: rotate(-45deg) translate(6px, -5px);
+  border: none;
+}
+
 .navigation {
   background-color: #3c9ae7;
   display: -webkit-box;
@@ -635,22 +718,27 @@ h1, h2, h3, h4 {
 
 ::-webkit-input-placeholder {
   font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
 }
 
 ::-moz-placeholder {
   font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
 }
 
 :-ms-input-placeholder {
   font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
 }
 
 ::-ms-input-placeholder {
   font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
 }
 
 p, a, ::placeholder, button, label {
   font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
 }
 
 #more, #more2, #more3, #more4 {
@@ -913,10 +1001,15 @@ footer p:hover {
     right: 184px;
     top: 420px;
   }
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+  .hamburger .ham {
+    left: 132%;
+  }
   .mobile-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -941,6 +1034,9 @@ footer p:hover {
   }
   .navigation ul {
     display: none;
+  }
+  .hamburger {
+    display: block;
   }
   .landing img {
     border-radius: 50%;

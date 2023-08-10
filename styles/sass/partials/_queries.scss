@@ -181,9 +181,15 @@
             top: 420px;
         }
     }
-
+    .hamburger {
+        display: block;
+        z-index: 1;
+        .ham {
+            left: 132%;
+        }
+    }
     .mobile-nav {
-        display: flex;
+        display: none;
         justify-content: center;
         background-color: #3c9ae7;
         height: 40px;
@@ -203,6 +209,10 @@
         ul {
             display: none;
         }
+    }
+
+    .hamburger {
+        display: block;
     }
 
     .landing {
