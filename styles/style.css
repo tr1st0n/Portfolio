@@ -8,6 +8,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-image: url(/assets/polygon-scatter-haikei2.png);
+  background-size: cover;
 }
 .about h2 {
   font-size: 40px;
@@ -76,10 +78,22 @@
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  width: 40%;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  margin-bottom: 15px;
+}
+.contact-container .personal .platforms a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+  width: 100%;
+  height: 100%;
+}
+.contact-container .personal .platforms a i {
+  width: 100%;
+  height: 100%;
 }
 .contact-container .contact {
   width: 65%;
@@ -315,6 +329,8 @@
 }
 #projectwrap {
   padding: 60px 0 0 0;
+  background-image: url(/assets/polygon-scatter-haikei3.png);
+  background-size: cover;
 }
 
 .project-section {
@@ -590,6 +606,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   margin: 0 auto;
   font-family: "Instrument Serif", serif;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
