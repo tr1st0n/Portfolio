@@ -383,9 +383,9 @@
   transition: transform 1s, -webkit-transform 1s;
 }
 .landing .daynight {
-  position: absolute;
-  right: 35px;
-  top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .landing .daynight button {
   display: -webkit-box;
@@ -718,27 +718,22 @@ h1, h2, h3, h4 {
 
 ::-webkit-input-placeholder {
   font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
 }
 
 ::-moz-placeholder {
   font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
 }
 
 :-ms-input-placeholder {
   font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
 }
 
 ::-ms-input-placeholder {
   font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
 }
 
 p, a, ::placeholder, button, label {
   font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
 }
 
 #more, #more2, #more3, #more4 {
@@ -997,10 +992,6 @@ footer p:hover {
   }
 }
 @media (max-width: 480px) {
-  .landing .daynight {
-    right: 184px;
-    top: 420px;
-  }
   .hamburger {
     display: block;
     z-index: 1;
