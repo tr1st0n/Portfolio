@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triston Moulton</title>
-    <link rel="icon" type="image/x-icon" href="assets/tlogo.png">
+    <link rel="icon" type="image/x-icon" href="assets/favvy.png">
     <link rel="stylesheet" href="styles/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <style>
+        @font-face {
+            font-family: Text;
+            src: url(Walkway\ Black.ttf);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -69,8 +79,8 @@
             <img src="./assets/AvatarMaker.png" alt="profile image" style="align-self: center;">
             <p>Toronto Based UX/UI Developer that lives to learn!</p>
             <div class="daynight">
-                <button id="toggle">🌘</button>
-                <button id="toggle2">🌖</button>
+                <button id="toggle"><i class="fa-regular fa-moon fa-xl" style="color: #feffff;"></i></button>
+                <button id="toggle2"><i class="fa-regular fa-sun fa-xl" style="color: #feffff;"></i></button>
             </div>  
         </div>
     </header> 
@@ -92,7 +102,10 @@
                             <button onclick="myFunction4()" id="myBtn4">Read more</button>
                     </div>
                     <div class="about-portrait">
-                        <img src="./assets/me.jpg" alt="Portrait">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/322REcbxj8YfFfrT8c0Lf8?utm_source=generator&theme=0" width="100%" height="752" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="mini-player">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/322REcbxj8YfFfrT8c0Lf8?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>    
@@ -114,7 +127,7 @@
         </div>
         <!--Project Section-->
         <div id="projectwrap">
-            <div id="projects" class="wrapper">
+            <div id="projects">
                 <h2 class="project-section">Projects</h2>
                 <div class="projects">
                     
@@ -126,27 +139,27 @@
 
                         <div class="responsive-text">
                             <p>HTML, CSS & JavaScript</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                            <p>Scarborough based Nail and Lash Business specializing in gel x, acrylic, full set and refills.<span id="dots">...</span><span id="more">Using HTML, CSS and JavaScript I created a full functional website for a coworker to help book clients as well as showcase her talent.</span></p>
                             <button onclick="myFunction()" id="myBtn">Read more</button> 
                             <div class="code-options">                                  
-                                <a href="https://project4-teammajesty-luxuryspacetours.netlify.app/">View Site</a>  
-                                <a href="https://github.com/JC47-TeamMajesty/majesty-space-tours">View Code</a>
+                                <a href="https://byshabeeha.netlify.app">View Site</a>  
+                                <a href="https://github.com/tr1st0n/Beauty-Bar">View Code</a>
                             </div>  
                         </div>                                 
                     </div>
                     <div class="project2">
                         <div class="responsive-flex">                            
-                                <h3>Code 5 News</h3>
-                                <img src="./assets/code5.png" alt="">
+                                <h3>PickFlix</h3>
+                                <img src="./assets/pixflix.png" alt="">
                         </div>
 
                         <div class="responsive-text">
                             <p>React, Rest API & JSX</p>
-                            <p>Code 5 News is a user-friendly web application designed to provide people with up-to-date news from around the world. <span id="dots">...</span><span id="more2">The app leverages React, a popular JavaScript library, to create a dynamic and responsive user interface. Users can easily access the latest headlines, breaking news, and in-depth articles on various topics. The app fetches real-time news data from reputable sources and presents it in a visually appealing and organized format, allowing users to stay informed on global events and trends conveniently in one centralized platform. With its intuitive design and seamless navigation, React News Feed offers a user-centric news consumption experience for individuals seeking to stay well-informed and connected to the world.</span></p> 
+                            <p>PickFlix is a user friendly application that allows users to filter through a large database of films based on their input. <span id="dots">...</span><span id="more2">This app uses Rest API's and JavaScript to create an array of films ranging from the 1960's to 90's. You choose the decade and genre and we help curat your next movie night. </span></p> 
                             <button onclick="myFunction2()" id="myBtn2">Read more</button>                       
                             <div class="code-options">                                  
-                                <a href="https://project4-teammajesty-luxuryspacetours.netlify.app/">View Site</a>  
-                                <a href="https://github.com/JC47-TeamMajesty/majesty-space-tours">View Code</a>
+                                <a href="https://pixflix.netlify.app/">View Site</a>  
+                                <a href="https://github.com/team-mary-and-triston/project-2-cohort47">View Code</a>
                             </div>  
                         </div>                                 
                     </div>
@@ -161,10 +174,25 @@
                             <p>Get ready to blast off to Mars! A (fake) luxury space travel site where users can browse tour locations, <span id="dots">...</span><span id="more3">select an asteroid-free date to book a tour, as well as search and cancel their bookings.</span></p>
                             <button onclick="myFunction3()" id="myBtn3">Read more</button> 
                             <div class="code-options">              
-                                <a href="https://project4-teammajesty-luxuryspacetours.netlify.app/">View Site</a>  
+                                <a href="https://space-tours.netlify.app/">View Site</a>  
                                 <a href="https://github.com/JC47-TeamMajesty/majesty-space-tours">View Code</a>
                             </div>  
                         </div>                                 
+                    </div>
+                    <div class="project">
+                        <div class="responsive-flex">
+                            <h3>TV Guide</h3>
+                            <img src="./assets/tvguide.png" alt="">
+                        </div>
+                        <div class="responsive-text">
+                            <p>Vite, React, JavaScript, HTML</p>
+                            <p>Want information on some of your favorite TV shows from back in the day? We have the perfect app for you. <span id="dots">...</span><span id="more5">Using Vite, React and REST API's we created an application that can get you all the information of your favorite TV shows using the tvmaze database.</span></p>
+                            <button onclick="myFunction3()" id="myBtn3">Read more</button> 
+                            <div class="code-options">              
+                                <a href="https://code5-tvguide.netlify.app/">View Site</a>  
+                                <a href="https://github.com/tr1st0n/TV-Guide">View Code</a>
+                            </div>  
+                        </div>
                     </div>
                 </div>
             </div>

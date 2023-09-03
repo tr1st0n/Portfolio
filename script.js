@@ -84,9 +84,9 @@ darkmode.addEventListener('click', function(e){
     const text = document.getElementById('project-text');
     const foottext = document.getElementById('foot-text');
     // Create our Changes
-    about.style.backgroundImage = "url('./assets/polygon-scatter-haikei.png')"
+    about.style.backgroundImage = "url('./assets/darkmode-grey1.png')"
     about.style.backgroundSize = "cover"
-    projects.style.backgroundImage = "url('./assets/polygon-scatter-haikei.png')";
+    projects.style.backgroundImage = "url('./assets/darkmode-grey2.png')";
     projects.style.backgroundSize = "cover"
     about.style.color = "white";
     foottext.style.backgroundColor ="rgb(105, 105, 105)";
@@ -104,9 +104,9 @@ lightmode.addEventListener('click', function(e){
     const foottext = document.getElementById('foot-text');
 
     // Create our Changes
-    about.style.backgroundImage = "url('./assets/polygon-scatter-haikei2.png')";
+    about.style.backgroundImage = "url('./assets/lightmode-grey.png')";
     about.style.backgroundSize = "cover";
-    projects.style.backgroundImage = "url('./assets/polygon-scatter-haikei3.png')";
+    projects.style.backgroundImage = "url('./assets/lightmode-grey2.png')";
     projects.style.backgroundSize = "cover";
     about.style.color = "black";
     projects.style.color = "black";

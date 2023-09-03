@@ -8,7 +8,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(/assets/polygon-scatter-haikei2.png);
+  background-image: url(/assets/lightmode-grey.png);
   background-size: cover;
 }
 .about h2 {
@@ -42,6 +42,9 @@
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+}
+.about .about-container .mini-player {
+  display: none;
 }
 
 .contact-container {
@@ -115,8 +118,10 @@
 .contact-container .contact h2 {
   text-align: center;
   font-size: 40px;
-  color: white;
   margin-bottom: 0;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
 }
 .contact-container .contact p {
   text-align: center;
@@ -170,6 +175,7 @@
   width: 98%;
   height: 200px;
   padding: 0px 0px;
+  font-family: Text;
 }
 .contact-container .contact form .message button {
   width: 98%;
@@ -411,8 +417,8 @@
   }
 }
 #projectwrap {
-  padding: 60px 0 0 0;
-  background-image: url(/assets/polygon-scatter-haikei3.png);
+  padding: 40px 0 0 0;
+  background-image: url(/assets/lightmode-grey2.png);
   background-size: cover;
 }
 
@@ -423,7 +429,7 @@
 }
 
 .projects {
-  padding: 0 20px 40px 20px;
+  padding: 0 20px 60px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,6 +482,9 @@
   color: white;
   text-align: center;
   font-size: 40px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
 }
 .skills p {
   font-size: 24px;
@@ -717,26 +726,26 @@ h1, h2, h3, h4 {
 }
 
 ::-webkit-input-placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: Text;
 }
 
 ::-moz-placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: Text;
 }
 
 :-ms-input-placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: Text;
 }
 
 ::-ms-input-placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: Text;
 }
 
 p, a, ::placeholder, button, label {
-  font-family: "Montserrat", sans-serif;
+  font-family: Text;
 }
 
-#more, #more2, #more3, #more4 {
+#more, #more2, #more3, #more4, #more5 {
   display: none;
 }
 
@@ -801,12 +810,28 @@ footer p:hover {
     min-width: 100%;
     padding: 0;
     font-size: 23px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   #about .about-container .about-text h2 {
     margin: 40px 0;
   }
   #about .about-container .about-portrait {
     min-width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: none;
+  }
+  #about .about-container .mini-player {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 25px;
   }
   #skills {
     padding: 50px 30px;
