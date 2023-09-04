@@ -263,6 +263,22 @@ class TextScramble {
     }
   } 
 
+  function myFunction5(event) {
+    const dots = document.getElementById("dots");
+    const moreText4 = document.getElementById("more5");
+    const btnText4 = document.getElementById("myBtn5");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText4.innerHTML = "Read more";
+      moreText4.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText4.innerHTML = "Read less";
+      moreText4.style.display = "inline";
+    }
+  } 
+
   function show() {
     document.querySelector('.ham').classList.toggle('open')
     document.querySelector('.hamburger').classList.toggle('active')
